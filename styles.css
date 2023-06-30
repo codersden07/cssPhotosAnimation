@@ -1,0 +1,66 @@
+html, body, *{
+   margin: 0;
+   padding: 0;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.primary__heading{
+    color:#2C3333;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.composition{
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.composition__photo{
+    width: 80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: absolute;
+    cursor: pointer;
+    outline-offset: 0.7rem;
+    transition: all 0.2s;
+}
+
+.composition__photo:hover{
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 10px 35px 0px;
+    transform: scale(1.1);
+    z-index: 5;
+    outline: 8px solid #FF6666;
+
+}
+
+.composition:hover .composition__photo:not(:hover){
+    transform: scale(0.9);
+}
+
+.composition__photot--p1{
+    top:-4rem;
+    left:7rem;
+}
+
+.composition__photot--p2{
+    top:-0.8rem;
+    left:14rem;
+}
+
+.composition__photot--p3{
+    left:3rem;
+    top:2rem;
+}
+
+.composition__photot--p4{
+    top:5rem;
+    left:9rem;
+}
